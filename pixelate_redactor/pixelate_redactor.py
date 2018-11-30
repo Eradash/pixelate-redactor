@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-def pixelate(input_file_path, output_file_path, pixel_size, start_x, start_y, size_x, size_y):
+def pixelate_redactor(input_file_path, output_file_path, pixel_size, start_x, start_y, size_x, size_y):
     original = Image.open(input_file_path)
     pixelated = original.resize(
         (original.size[0] // pixel_size, original.size[1] // pixel_size),

@@ -1,19 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-import sys
 from setuptools import setup, find_packages
 
-requires=[
+requires = [
     'pillow',
 ]
 
 setup(
     name='pixelate-redactor',
-    version='0.1',
+    version='0.2',
     author='Vincent Poirier',
-    author_email='poirier.20.100@hotmail.com',
-    description='Library provides pixelation for images for redaction',
+    author_email='vincent.poirier@tlmgo.com',
+    description='Library that provides pixelation for image redaction',
     long_description="""
 # pixelate-redactor
 

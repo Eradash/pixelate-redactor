@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import argparse
-from pixelate.pixelate import pixelate
+from pixelate_redactor.pixelate_redactor import pixelate_redactor
 
 parser = argparse.ArgumentParser(
     description='Make your photos worse. But it looks like pixel art.'
@@ -34,4 +34,4 @@ parser.add_argument(
 
 args = parser.parse_args()
 
-pixelate(args.input, args.output, args.pixel_size)
+pixelate_redactor(args.input, args.output, args.pixel_size, args.start_x, args.start_y, args.size_x, args.size_y)
