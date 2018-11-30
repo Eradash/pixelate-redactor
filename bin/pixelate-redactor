@@ -16,6 +16,22 @@ parser.add_argument(
     '--pixel-size', type=int, help='pixel size', required=True
 )
 
+parser.add_argument(
+    '--start-x', type=int, help='X position start', required=True
+)
+
+parser.add_argument(
+    '--start-y', type=int, help='Y position start', required=True
+)
+
+parser.add_argument(
+    '--size-x', type=int, help='X size', required=True
+)
+
+parser.add_argument(
+    '--size-y', type=int, help='Y size', required=True
+)
+
 args = parser.parse_args()
 
 pixelate(args.input, args.output, args.pixel_size)

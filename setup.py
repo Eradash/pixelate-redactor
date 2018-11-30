@@ -9,29 +9,29 @@ requires=[
 ]
 
 setup(
-    name='pixelate',
-    version='0.4',
-    author='Georgy Bazhukov',
-    author_email='georgy.bazhukov@gmail.com',
-    description='Library provides pixelation for images',
+    name='pixelate-redactor',
+    version='0.1',
+    author='Vincent Poirier',
+    author_email='poirier.20.100@hotmail.com',
+    description='Library provides pixelation for images for redaction',
     long_description="""
-# pixelate
+# pixelate-redactor
 
-Make your photos worse. But it looks like pixel art.
+Redact images with blur
 
 Works with Python >= 2.6, Python >= 3.2.
 
 ## Installation
 
-    pip install pixelate
+    pip install pixelate-redactor
 
 ## Example
 
-    pixelate --input=img/bps.jpg --output=img/bps.png --pixel-size=10
+    pixelate-redactor --input=img/bps.jpg --output=img/bps.png --pixel-size=10 --start-x=100 --start-y=100 --size-x=500 --size-y=60
 
-see more https://github.com/useless-tools/pixelate
+see more https://github.com/Eradash/pixelate-redactor
 """,
-    url='https://github.com/useless-tools/pixelate',
+    url='https://github.com/Eradash/pixelate-redactor',
     packages=find_packages(),
     include_package_data=True,
     license="BSD",
@@ -54,5 +54,5 @@ see more https://github.com/useless-tools/pixelate
     requires=requires,
     tests_require=requires,
     setup_requires=requires,
-    scripts=['bin/pixelate'],
+    scripts=['bin/pixelate-redactor'],
 )
