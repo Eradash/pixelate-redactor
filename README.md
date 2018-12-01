@@ -6,7 +6,9 @@ Works with Python >= 2.6, Python >= 3.2.
 
 ## Installation
 
-    pip install pixelate-redactor
+```bash
+pip install pixelate-redactor
+```
 
 ## Example
 
