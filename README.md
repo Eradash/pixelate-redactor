@@ -1,6 +1,6 @@
 # pixelate-redactor
 
-Redact images with blur
+Redact images with pixels
 
 Works with Python >= 2.6, Python >= 3.2.
 
@@ -14,8 +14,8 @@ Works with Python >= 2.6, Python >= 3.2.
 
 From this:
 
-![original](./img/example_img_original.png)
+![original](https://raw.githubusercontent.com/Eradash/pixelate-redactor/master/img/example_img_original.png)
 
 To this:
 
-![redacted](./img/example_img_redacted.png)
+![redacted](https://raw.githubusercontent.com/Eradash/pixelate-redactor/master/img/example_img_redacted.png)
