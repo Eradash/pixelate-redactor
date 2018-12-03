@@ -4,7 +4,7 @@ import argparse
 from pixelate_redactor.pixelate_redactor import pixelate_redactor
 
 parser = argparse.ArgumentParser(
-    description='Make your photos worse. But it looks like pixel art.'
+    description='Redact part of image with pixels.'
 )
 parser.add_argument(
     '--input', type=str, help='path to input image', required=True
