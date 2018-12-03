@@ -6,13 +6,13 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-requires = [
+install_requires = [
     'pillow',
 ]
 
 setuptools.setup(
     name='pixelate-redactor',
-    version='0.3',
+    version='0.4',
     author='Vincent Poirier',
     author_email='vincent.poirier@tlmgo.com',
     description='Library that provides pixelation for image redaction',
@@ -37,8 +37,8 @@ setuptools.setup(
         'Programming Language :: Python :: 3.7',
     ],
     test_suite="runtests",
-    requires=requires,
-    tests_require=requires,
-    setup_requires=requires,
-    scripts=['bin/pixelate-redactor'],
+    requires=install_requires,
+    tests_require=install_requires,
+    setup_requires=install_requires,
+    scripts=['bin/pixelate-redactor', 'bin/pixelate-redactor-boxes'],
 )

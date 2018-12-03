@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+import argparse
+from pixelate_redactor.pixelate_redactor import pixelate_boxes_path
+
+parser = argparse.ArgumentParser(
+    description='Redact part of image with pixels.'
+)
+parser.add_argument(
+    '--input', type=str, help='path to input image', required=True
+)
+parser.add_argument(
+    '--output', type=str, help='path to output image', required=True
+)
+parser.add_argument(
+    '--pixel-size', type=int, help='pixel size', required=True
+)
+
+parser.add_argument(
+    '--boxes', type=str, help='path to box file', required=True
+)
+
+args = parser.parse_args()
+
+pixelate_boxes_path(args.input, args.output, args.pixel_size, args.boxes)
